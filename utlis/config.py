@@ -2,8 +2,6 @@ import torch
 from torchvision import transforms
 import os
 
-CLASSES = ['Elon Musk', 'Cristiano Ronaldo', 'Brad Pitt', 'Leonardo DiCaprio', 'Rami Malek', 'Dexter Morgan', 'Joe Goldberg', 'Lionel Messi', 'Mohamed Salah', 'Mohamed Aboutrika', 'ali', 'mahmoud', 'mazloum', 'salama']
-
 
 # Paths
 TRAIN_DIR = "TRAIN_PATH"
