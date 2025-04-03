@@ -6,7 +6,7 @@ import os
 import random
 from PIL import Image
 
-from utlis.config import *
+from utils.config import *
 
 class SiameseFaceDataset(Dataset):
     def __init__(self, data_path, transform=None, pairs_per_class=5):

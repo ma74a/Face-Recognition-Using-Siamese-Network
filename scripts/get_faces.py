@@ -43,13 +43,15 @@ def crop_and_save_faces(input_dir, output_dir):
         except Exception as e:
             print(f"Error processing {img_name}: {e}")
 
-# Loop through directories
+
+# for get faces in all images in every class
+'''
 for person in os.listdir(input_root):
     input_dir = os.path.join(input_root, person)
     output_dir = os.path.join(output_root, person)
     
     if os.path.exists(input_dir):
-        crop_and_save_faces(input_dir, output_dir)
+        crop_and_save_faces(input_dir, output_dir)'''
 
 
 
@@ -77,4 +79,5 @@ def crop_face(image_path, output_path):
             print("No face detected.")
     except Exception as e:
         print(f"Error processing {image_path}: {e}")
+    
 

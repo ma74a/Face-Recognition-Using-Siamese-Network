@@ -7,3 +7,5 @@ pillow
 tqdm
 tensorflow
 mtcnn
+flet
+pandas

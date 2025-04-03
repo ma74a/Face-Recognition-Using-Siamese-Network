@@ -6,13 +6,13 @@ from tqdm import tqdm
 from utlis.config import *
 
 class SiameseTrainer:
-    def __init__(self, model, train_loader, val_loader, criterion, optimizer, thrsehold=THRESHOLD):
+    def __init__(self, model, train_loader, val_loader, criterion, optimizer, threshold=THRESHOLD):
         self.model = model.to(DEVICE)
         self.criterion = criterion
         self.optimizer = optimizer
         self.train_loader = train_loader
         self.val_loader = val_loader
-        self.thrsehold = thrsehold
+        self.thrsehold = threshold
         self.scheduler = ReduceLROnPlateau(self.optimizer, 'min', patience=3, factor=0.1)
 
         self.total_train_losses = []
