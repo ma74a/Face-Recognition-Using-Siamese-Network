@@ -38,13 +38,13 @@ cd Face-Recognition-Using-Siamese-Network
 
 2. Create a virtual environment (recommended):
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Project Structure
@@ -75,7 +75,7 @@ Face-Recognition-Using-Siamese-Network/
 To train the model on your own dataset:
 
 ```bash
-python train_model.py
+python3 train_model.py
 ```
 
 ### Face Recognition
@@ -83,7 +83,7 @@ python train_model.py
 To perform face recognition on an image:
 
 ```bash
-python main.py path/to/image.jpg
+python3 main.py path/to/image.jpg
 ```
 
 ## Model Architecture
