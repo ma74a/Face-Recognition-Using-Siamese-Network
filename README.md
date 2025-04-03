@@ -89,12 +89,12 @@ python main.py path/to/image.jpg
 ## Model Architecture
 
 ### Siamese Network
-![Siamese Network Architecture](https://raw.githubusercontent.com/yourusername/Face-Recognition-Using-Siamese-Network/main/docs/siamese_network.png)
+![Siamese Network Architecture](docs/siamese_network.png)
 
 ### Contrastive Loss
 The contrastive loss function is defined as:
 
-![Contrastive Loss Formula](https://raw.githubusercontent.com/yourusername/Face-Recognition-Using-Siamese-Network/main/docs/contrastive_loss.png)
+![Contrastive Loss Formula](docs/contrastive_loss.png)
 
 Where:
 - Y = 0 for same person, 1 for different people
