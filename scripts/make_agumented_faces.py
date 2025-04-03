@@ -36,5 +36,3 @@ def augment_dataset(dataset_dir, save_dir, num_augmented=5):
 
             
 
-# Example usage
-augment_dataset("./cropped_dataset_v2", "augmented_faces", num_augmented=5)
