@@ -15,7 +15,7 @@ class SiameseNetwork(nn.Module):
                 for param in child.parameters():
                     param.requires_grad = False
 
-        self.backbone = nn.Sequential(*list(self.backbone.children())[:-2])
+        self.backbone = nn.Sequential(*list(self.backbone.children())[:-1])
 
         self.fc = nn.Sequential(
             nn.Linear(2048, 512),
