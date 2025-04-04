@@ -1,21 +1,15 @@
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 import torch
 
-import pickle
-from PIL import Image
 from scipy.spatial.distance import euclidean
-
-
-from utils.config import * 
-from src.model import SiameseNetwork
-from scripts.get_faces import crop_face
-
-import os
 from PIL import Image
+import pickle
+import os
+
+
+from scripts.get_faces import crop_face
+from src.model import SiameseNetwork
+from utils.config import * 
+
 
 
 

@@ -1,9 +1,9 @@
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 from torchvision.models import resnet50, ResNet50_Weights
+import torch.nn.functional as F
+import torch.nn as nn
+import torch
 
-from utlis.config import *
+from utils.config import *
 
 class SiameseNetwork(nn.Module):
     def __init__(self, embedding_size=EMBEDDING_DIM, freeze_blocks=5):

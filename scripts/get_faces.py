@@ -1,10 +1,12 @@
-import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
-from PIL import Image
-import numpy as np
 from mtcnn import MTCNN
 from tqdm import tqdm
+from PIL import Image
+import numpy as np
+import os
+
+
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 # Initialize MTCNN detector (mtcnn package version)
 mtcnn = MTCNN()

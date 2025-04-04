@@ -1,9 +1,9 @@
-import torch
-import torch.nn.functional as F
 from torch.optim.lr_scheduler import ReduceLROnPlateau
+import torch.nn.functional as F
+import torch
 
+from utils.config import *
 from tqdm import tqdm
-from utlis.config import *
 
 class SiameseTrainer:
     def __init__(self, model, train_loader, val_loader, criterion, optimizer, threshold=THRESHOLD):

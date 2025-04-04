@@ -1,8 +1,8 @@
 from src.embeddings import load_model, load_face_database, match_face
 from scripts.get_faces import crop_face
 
-import os
 import sys
+import os
 
 def main(image_path, model_path, embedding_path):
     if not os.path.isfile(image_path):

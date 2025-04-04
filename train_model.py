@@ -1,15 +1,13 @@
-# import sys
-# import os
+import torch.optim as optim
+import torch
 
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from src.custom_dataset import get_data_loaders
 from src.model import SiameseNetwork, ContrastiveLoss
+from src.custom_dataset import get_data_loaders
 from src.trainning import SiameseTrainer
 from utils.visualize import show_images
 from utils.config import *
-import torch
-import torch.optim as optim
+
+
 
 
 def main():

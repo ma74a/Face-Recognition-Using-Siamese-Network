@@ -1,10 +1,10 @@
-import torch
-from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms
+import torch
 
-import os
-import random
 from PIL import Image
+import random
+import os
 
 from utils.config import *
 
