@@ -17,8 +17,8 @@ The project uses a Siamese Network architecture with the following components:
 
 2. **Contrastive Loss**:
    - Measures the similarity between pairs of face embeddings
-   - Minimizes distance for different-person pairs
-   - Maximizes distance for same-person pairs
+   - Minimizes distance for same-person pairs
+   - Maximizes distance for different-person pairs
 
 ### Key Features
 
